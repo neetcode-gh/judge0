@@ -1,4 +1,4 @@
-FROM judge0/compilers:1.4.0 AS production
+FROM judge0/basewithpythonpackages:latest AS production
 
 ENV JUDGE0_HOMEPAGE "https://judge0.com"
 LABEL homepage=$JUDGE0_HOMEPAGE
@@ -12,7 +12,8 @@ LABEL maintainer=$JUDGE0_MAINTAINER
 ENV PATH "/usr/local/ruby-2.7.0/bin:/opt/.gem/bin:$PATH"
 ENV GEM_HOME "/opt/.gem/"
 
-RUN apt-get update && \
+RUN echo "deb http://deb.debian.org/debian buster main" > /etc/apt/sources.list && \
+    apt-get update && \
     apt-get install -y --no-install-recommends \
       cron \
       libpq-dev \
