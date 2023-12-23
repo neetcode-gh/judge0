@@ -67,8 +67,8 @@
     name: "C# (Mono 6.6.0.161)",
     is_archived: false,
     source_file: "Main.cs",
-    compile_cmd: "/usr/local/mono-6.6.0.161/bin/mcs %s Main.cs",
-    run_cmd: "/usr/local/mono-6.6.0.161/bin/mono Main.exe"
+    compile_cmd: "/usr/bin/mcs %s Main.cs",
+    run_cmd: "/usr/bin/mono Main.exe"
   },
   {
     id: 52,
@@ -149,18 +149,18 @@
   },
   {
     id: 62,
-    name: "Java (OpenJDK 13.0.1)",
+    name: "Java (OpenJDK 14.0.1+7)",
     is_archived: false,
     source_file: "Main.java",
-    compile_cmd: "/usr/local/openjdk13/bin/javac %s Main.java",
-    run_cmd: "/usr/local/openjdk13/bin/java Main"
+    compile_cmd: "/usr/local/openjdk14/bin/javac %s Main.java",
+    run_cmd: "/usr/local/openjdk14/bin/java Main"
   },
   {
     id: 63,
-    name: "JavaScript (Node.js 12.14.0)",
+    name: "JavaScript (Node.js 12.16.3)",
     is_archived: false,
     source_file: "script.js",
-    run_cmd: "/usr/local/node-12.14.0/bin/node script.js"
+    run_cmd: "/usr/local/node/bin/node script.js"
   },
   {
     id: 64,
@@ -217,10 +217,10 @@
   },
   {
     id: 71,
-    name: "Python (3.8.1)",
+    name: "Python (3.7.7)",
     is_archived: false,
     source_file: "script.py",
-    run_cmd: "/usr/local/python-3.8.1/bin/python3 script.py"
+    run_cmd: "/usr/bin/python3 script.py"
   },
   {
     id: 72,
