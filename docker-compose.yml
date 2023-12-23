@@ -9,7 +9,7 @@ x-logging:
 
 services:
   server:
-    image: judge0/judge0:latest
+    image: us-central1-docker.pkg.dev/neetcode-dd170/judge0/judge0withpythonpackages:latest
     volumes:
       - ./judge0.conf:/judge0.conf:ro
     ports:
@@ -19,7 +19,7 @@ services:
     restart: always
 
   worker:
-    image: judge0/judge0:latest
+    image: us-central1-docker.pkg.dev/neetcode-dd170/judge0/judge0withpythonpackages:latest
     command: ["./scripts/workers"]
     volumes:
       - ./judge0.conf:/judge0.conf:ro
